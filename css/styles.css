@@ -1,0 +1,124 @@
+html {
+  box-sizing: border-box;
+}
+
+ /* *, *:before, *:after {
+   box-sizing: inherit
+ } */
+
+body {
+  width: 100%;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-size: 1.5em;
+  font-weight: 400;
+  background-color: #0077b5;
+
+  /* padding: 10px; */
+}
+/* header styles */
+header {
+  display: flex;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: blackcurrant, sans-serif;
+}
+
+.logo {
+  margin: .67em;
+}
+
+#hamburger {
+  margin: .67em;
+  border: none;
+  background-color: inherit;
+  
+}
+
+#hamburger div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+/* main navigation */
+#main-nav {
+  display: flex;
+  text-decoration: none;
+  /* background-color: orange; */
+  background-color: #0077b5;
+  /* width: 100%; */
+
+}
+
+ul li {
+  margin: 0 12px;
+  list-style-type: none;
+  /* color: #000; */
+}
+
+/* main container, css grid */
+main {
+  background-color: #0077b5;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  text-align: center; 
+  justify-items: center; 
+}
+
+.projects {
+  background-color: lightgrey;
+  padding: 5px;
+  color: black;
+  /* border-radius: 20px; */
+  max-width: 80%;
+  align-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #ababab;
+  margin: 2px;
+  max-height: 25%;
+  
+}
+
+.card-desc {
+  height: 75%;
+}
+
+.social a:visited {
+  color: #111;
+}
+
+.social {
+  display: flex;
+  
+}
+
+@media (min-width: 550px) {
+  body {
+    background-color: #0077b5;
+
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+  
+
+}
