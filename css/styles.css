@@ -2,9 +2,9 @@ html {
   box-sizing: border-box;
 }
 
- /* *, *:before, *:after {
-   box-sizing: inherit
- } */
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
 
 body {
   width: 100%;
@@ -55,7 +55,6 @@ h1 {
   /* background-color: orange; */
   background-color: #0077b5;
   /* width: 100%; */
-
 }
 
 ul li {
@@ -93,11 +92,25 @@ main {
   background-color: #ababab;
   margin: 2px;
   max-height: 25%;
-  
 }
 
 .card-desc {
   height: 75%;
+  font-size: 0.67em;
+}
+
+/* resume styling */
+#downloadResume {
+  display: block;
+  border: 3px solid black;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 0.67em;
+  color: #000;
+}
+
+#downloadResume:visited {
+  color: #000;
 }
 
 .social a:visited {
@@ -106,7 +119,11 @@ main {
 
 .social {
   display: flex;
-  
+  justify-content: center;
+}
+
+@-ms-viewport{
+  width: device-width;
 }
 
 @media (min-width: 550px) {
