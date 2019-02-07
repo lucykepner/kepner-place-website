@@ -8,6 +8,7 @@ html {
 
 body {
   width: 100%;
+  padding: 0;
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
 	font-style: normal;
@@ -20,15 +21,25 @@ body {
 /* header styles */
 header {
   display: flex;
+  flex-direction: column;
   background-color: white;
+}
+
+.title {
+  display: inline-flex;
 }
 
 img {
   max-width: 100%;
+  min-width: 20%;
 }
 
 h1 {
   font-family: blackcurrant, sans-serif;
+}
+
+h2 {
+  padding-left: 1em;
 }
 
 .logo {
@@ -39,7 +50,6 @@ h1 {
   margin: .67em;
   border: none;
   background-color: inherit;
-  
 }
 
 #hamburger div {
@@ -47,14 +57,28 @@ h1 {
   height: 5px;
   background-color: black;
   margin: 6px 0;
+  border-radius: 2px;
 }
 /* main navigation */
 #main-nav {
   display: flex;
-  text-decoration: none;
-  /* background-color: orange; */
+  flex-direction: row;
+  /* text-decoration: none; */
   background-color: #0077b5;
-  /* width: 100%; */
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: 2px red solid;
+  color: black;
 }
 
 ul li {
@@ -66,7 +90,7 @@ ul li {
 /* main container, css grid */
 main {
   background-color: #0077b5;
-
+  
 }
 
 .container {
@@ -74,6 +98,7 @@ main {
   grid-template-columns: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+  grid-gap: 0.5em;
   text-align: center; 
   justify-items: center; 
 }
@@ -97,6 +122,10 @@ main {
 .card-desc {
   height: 75%;
   font-size: 0.67em;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 /* resume styling */
@@ -132,10 +161,34 @@ main {
 
   }
 
+  #hamburger {
+    display: none;
+  }
+
+  #main-nav {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+  
+  .hidden {
+    display: flex;
+  }
+
+  ul li {
+    margin: 0 12px;
+    list-style-type: none;
+  }
+
   .container {
     grid-template-columns: 1fr 1fr 1fr;
 
   }
   
 
+
+}
+
+@media (40em <= width <= 59em ) {
+  background-color: pink;
 }

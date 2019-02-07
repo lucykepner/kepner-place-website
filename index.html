@@ -20,33 +20,41 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="img/lightbulb-bike-small.png" width="50"/>
+    <div class="title">
+      <div class="logo">
+        <img src="img/lightbulb-bike-small.png" width="50"/>
+      </div>
+      <h1>Kepner Place</h1>
+      <button id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
     </div>
-    <h1>Kepner Place</h1>
-    <button id="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </button>
+    <nav id="main-nav">
+      <ul class="hidden">
+        <li id="home">
+          <a href="#">Home</a>
+        </li>
+        <li id="projects">
+          <a href="#">Coding Projects</a>
+        </li>
+        <li id="resume">
+          <a href="#" target="_blank">Resume</a>
+        </li>
+        <li id="bikelog"><a href="#" target="_blank">BikeBlog</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <ul id="main-nav">
-      <li id="home"><a href="#">Home</a></li>
-      <li id="projects"><a href="#">Coding Projects</a></li>
-      <li id="resume"><a href="#" target="_blank">Resume</a></li>
-      <li id="bikelog"><a href="#" target="_blank">BikeBlog</a></li>
-    </ul>
-  </nav>
+
 <main>
   <h2>Coding Projects</h2>
   <section class="container project-list">
-
     <div class="projects col3">
       <article>
         <a href="https://karenkepner.github.io/udacity-memory-game/" target="_blank">
           <h3 class="card">Memory Game</h3>
-          <p class="card-desc">HTML, CSS, JavaScript project from Udacity Front End Nanodegree Program.</p>
+          <p class="card-desc">HTML, CSS, JavaScript project from Udacity Front End Nanodegree Program. <span class="underline">See project.</span></p>
         </a>
       </article>
     </div>
@@ -54,7 +62,7 @@
         <article>
           <a href="https://karenkepner.github.io/Simple-Timer/" target="_blank">
             <h3 class="card">Simple Timer</h3>
-            <p class="card-desc">Stopwatch timer that I built to explore the setTimeout() method.</p>
+            <p class="card-desc">Stopwatch timer that I built to explore the setTimeout() method. <span class="underline">See project.</span></p>
           </a>
         </article>
       </div>
@@ -62,34 +70,51 @@
       <article>
         <a href="https://karenkepner.github.io/my-idea-box/" target="_blank">
           <h3 class="card">Idea Box</h3>
-          <p class="card-desc">Turing School project with vanilla JavaScript and CSS flexbox.</p>
+          <p class="card-desc">Turing School project with vanilla JavaScript and CSS flexbox. <span class="underline">See project.</span></p>
         </a>
       </article>
     </div>
     <div class="projects col3">
       <article>
-        <h3 class="card"><a href="http://milehighwake.com/" target="_blank">Mile High Wakeboarding Wordpress Site</a></h3>
-        <p class="card-desc">Wordpress site built using a child theme and custom CSS.</p>
+          <a href="http://milehighwake.com/" target="_blank">
+          <h3 class="card">Mile High Wakeboarding Wordpress Site</h3>
+          <p class="card-desc">Wordpress site built using a child theme and custom CSS. <span class="underline">Go to site.</span></p>
+        </a>
         </article>
     </div>
     <div class="projects col3">
         <article>
-          <h3 class="card"> <a href="http://highcountrywildland.com/" target="_blank">High Country Wildland Fire Consulting (HCWFC) Wordpress Site</a></h3>
-          <p class="card-desc">Wordpress site built using a free theme and custom CSS. Logo design was also part of this project.</p>
+          <a href="http://highcountrywildland.com/" target="_blank">
+            <h3 class="card">High Country Wildland Fire Consulting (HCWFC) Wordpress Site</h3>
+            <p class="card-desc">Wordpress site built using a free theme and custom CSS. Logo design was also part of this project. <span class="underline">Go to site.</span></p>
+          </a>
         </article>
     </div>
     <div class="projects col3">
         <article>
-          <h3 class="card"> <a href="https://thedirtdivas.com/" target="_blank">Dirt Divas - Women's Mountain Bike Club Wordpress Site</a></h3>
-          <p class="card-desc">Wordpress site built using a child theme and custom CSS. With ride schedule and RSVP capability to help manage events.</p>
+          <a href="https://thedirtdivas.com/" target="_blank">
+            <h3 class="card">Dirt Divas - Women's Mountain Bike Club Wordpress Site</h3>
+            <p class="card-desc">Wordpress site built using a child theme and custom CSS. With ride schedule and RSVP capability to help manage events. <span class="underline">Go to site.</span></p>
+          </a>
         </article>
     </div>
+
+  </section>
+  <h2>Coding Ideas</h2>
+  <section class="container">
+    
     <div class="projects col3">
         <article>
           <h3 class="card">Garmin GPX File Trim</h3>
           <p class="card-desc">COMING SOON! Application to trim gps files when you drive away from the trailhead without stopping your watch that is recording your workout.</p>
         </article>
       </div>
+      <div class="projects col3">
+          <article>
+            <h3 class="card">Mountain Bike Trailhead Definer</h3>
+            <p class="card-desc">COMING SOON! Application to search for nearby mtn bike trails. It will list facilities at the trailhead such as parking, bathrooms, and picnic areas. And recommend the nearest craft brewery for after ride fun.</p>
+          </article>
+        </div>
   </section>
   <h2>Resume</h2>
   <section id="resume">
