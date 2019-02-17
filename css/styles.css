@@ -7,7 +7,7 @@ html {
  }
 
 body {
-  width: 100%;
+  /* width: 100%; */
   padding: 0;
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
@@ -15,50 +15,58 @@ body {
 	font-size: 1.5em;
   font-weight: 400;
   background-color: #0077b5;
-
-  /* padding: 10px; */
-}
-/* header styles */
-header {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
-
-.title {
-  display: inline-flex;
-}
-
-img {
-  max-width: 100%;
-  min-width: 20%;
-}
-
-h1 {
-  font-family: blackcurrant, sans-serif;
 }
 
 h2 {
   padding-left: 1em;
 }
 
-.logo {
-  margin: .67em;
+/* header styles */
+header {
+  background-color: white;
+  width: 100%;
+}
+
+#head {
+  display: flex;
+  flex-direction: row;
+
+  padding: 1px;
+}
+
+h1 {
+  font-family: blackcurrant, sans-serif;
+  font-size: 1.75em;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.lightbulb {
+  padding: 10px;
+}
+
+.my-title {
+  text-align: center;
 }
 
 #hamburger {
-  margin: .67em;
   border: none;
   background-color: inherit;
+  align-self: flex-start;
+
 }
 
+/* builds the burger lines */
 #hamburger div {
   width: 35px;
   height: 5px;
   background-color: black;
-  margin: 6px 0;
+  margin: 6px 0; 
   border-radius: 2px;
 }
+
 /* main navigation */
 #main-nav {
   display: flex;
@@ -96,9 +104,7 @@ main {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  grid-gap: 0.5em;
+  grid-gap: 0.25em;
   text-align: center; 
   justify-items: center; 
 }
@@ -155,9 +161,9 @@ main {
   justify-content: center;
 }
 
-@-ms-viewport{
+/* @-ms-viewport{
   width: device-width;
-}
+} */
 
 @media (min-width: 550px) {
   body {
@@ -186,6 +192,8 @@ main {
 
   .container {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .25em;
+
 
   }
   
