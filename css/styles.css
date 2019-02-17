@@ -30,8 +30,9 @@ header {
 #head {
   display: flex;
   flex-direction: row;
-
   padding: 1px;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -72,15 +73,13 @@ h1 {
   display: flex;
   flex-direction: row;
   /* text-decoration: none; */
-  background-color: #0077b5;
-}
-
-.hidden {
-  display: none;
+  background-color: #8da6b2;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
-  color: #fff;
+  color: #000042;
   text-decoration: none;
 }
 
@@ -89,16 +88,20 @@ a:visited {
   color: black;
 }
 
-ul li {
-  margin: 0 12px;
+
+#main-nav ul li {
+  margin: 0.5em;
   list-style-type: none;
-  /* color: #000; */
 }
+
+#main-nav ul li:hover {
+  background-color: #0077b5;
+}
+
 
 /* main container, css grid */
 main {
   background-color: #0077b5;
-  
 }
 
 .container {
@@ -146,6 +149,7 @@ main {
   text-decoration: none;
   font-size: 0.67em;
   color: #000;
+  margin-left: 2em;
 }
 
 #downloadResume:visited {
@@ -191,16 +195,17 @@ main {
   }
 
   .container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: .25em;
-
-
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0.25em;
+    grid-row-gap: 1em;
   }
   
 
 
 }
 
-@media (40em <= width <= 59em ) {
-  background-color: pink;
+@media (max-width: 450px) {
+  #resume {
+    display: none;
+  }
 }
