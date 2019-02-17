@@ -129,6 +129,10 @@ main {
 }
 
 /* resume styling */
+#resume {
+  height: 100vh;
+}
+
 #downloadResume {
   display: block;
   border: 3px solid black;
