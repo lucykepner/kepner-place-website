@@ -84,10 +84,9 @@ a {
 }
 
 a:visited {
-  text-decoration: 2px red solid;
+  /* text-decoration: 2px red solid; */
   color: black;
 }
-
 
 #main-nav ul li {
   padding: 0.25em;
@@ -97,7 +96,6 @@ a:visited {
 #main-nav ul li:hover {
   background-color: #0077b5;
 }
-
 
 /* main container, css grid */
 main {
@@ -187,6 +185,7 @@ main {
   
   .hidden {
     display: flex;
+    margin: 0;
   }
 
   ul li {
@@ -199,9 +198,6 @@ main {
     grid-column-gap: 0.25em;
     grid-row-gap: 1em;
   }
-  
-
-
 }
 
 @media (max-width: 450px) {
