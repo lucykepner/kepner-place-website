@@ -107,33 +107,31 @@ main {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 0.25em;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
   text-align: center; 
-  justify-items: center; 
+  justify-items: center;
+  padding: 1em;
 }
 
 .projects {
   background-color: lightgrey;
   padding: 5px;
   color: black;
-  /* border-radius: 20px; */
-  max-width: 80%;
+  max-width: 100%;
   align-content: center;
   align-items: center;
   border-radius: 0.25em;
   box-shadow: 2px 2px 10px #000042;
 }
 
-.card {
+.title {
   background-color: #ababab;
   border-radius: 0.25em;
-
   margin: 2px;
-  max-height: 25%;
 }
 
 .card-desc {
-  height: 75%;
   font-size: 0.67em;
 }
 
@@ -185,17 +183,27 @@ main {
   list-style-type: none;
 }
 
-
-
 .copy {
   margin-left: 10px;
 }
-/* @-ms-viewport{
-  width: device-width;
-} */
 
+/* media queries for wider screens */
+@media (min-width: 550px) and (max-width: 769px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .title {
+    width: 100%;
+  }
+}
 
+/* media queries for widest screens */
 @media (min-width: 770px) {
   body {
     background-color: #0077b5;
@@ -227,14 +235,18 @@ main {
 
   .container {
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 0.25em;
+    grid-column-gap: 1em;
     grid-row-gap: 1em;
   }
-}
 
-@media (min-width: 550px) and (max-width: 769px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr);
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .title {
+    width: 100%;
   }
 }
 
