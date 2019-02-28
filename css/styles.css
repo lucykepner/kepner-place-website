@@ -6,6 +6,14 @@ html {
    box-sizing: inherit;
  }
 
+ /* Color Pallette:
+  dark grey: #817A87
+  light green: #EBFCCE
+  light grey: #EBEBED
+  green: #9BAA7D
+  dark grey green: #606861
+   */
+
 body {
   /* width: 100%; */
   padding: 0;
@@ -14,7 +22,7 @@ body {
 	font-style: normal;
 	font-size: 1.5em;
   font-weight: 400;
-  background-color: #0077b5;
+  background-color: #606861;
 }
 
 h2 {
@@ -23,7 +31,7 @@ h2 {
 
 /* header styles */
 header {
-  background-color: white;
+  background-color: #EBEBED;
   width: 100%;
 }
 
@@ -75,7 +83,7 @@ h1 {
   display: flex;
   flex-direction: row;
   /* text-decoration: none; */
-  background-color: #8da6b2;
+  background-color: #EBFCCE;
   align-items: center;
   justify-content: center;
 }
@@ -87,7 +95,7 @@ a {
 
 a:visited {
   /* text-decoration: 2px red solid; */
-  color: black;
+  color: #606861;
 }
 
 #main-nav ul li {
@@ -96,12 +104,12 @@ a:visited {
 }
 
 #main-nav ul li:hover {
-  background-color: #0077b5;
+  background-color: #9BAA7D;
 }
 
 /* main container, css grid */
 main {
-  background-color: #0077b5;
+  background-color: #606861;
 }
 
 .container {
@@ -126,7 +134,7 @@ main {
 }
 
 .title {
-  background-color: #ababab;
+  background-color: #9BAA7D;
   border-radius: 0.25em;
   margin: 2px;
 }
@@ -141,7 +149,7 @@ main {
 
 .button {
   border: none;
-  background-color: #8da6b2;
+  background-color: #9BAA7D;
   margin: 3px;
   border-radius: 0.25em;
   font-size: .75em;
@@ -149,7 +157,7 @@ main {
 }
 
 .button:hover {
-  background-color: #0077b5;
+  background-color: #EBFCCE;
 }
 
 /* resume styling */
@@ -168,11 +176,11 @@ main {
 }
 
 #downloadResume:visited {
-  color: #000;
+  color: #817A87;
 }
 
 .social a:visited {
-  color: #111;
+  color: #817A87;
 }
 
 /* footer css */
@@ -205,9 +213,6 @@ main {
 
 /* media queries for widest screens */
 @media (min-width: 770px) {
-  body {
-    background-color: #0077b5;
-  }
 
   #head {
     justify-content: space-between;
