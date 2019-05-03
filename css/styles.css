@@ -14,6 +14,17 @@ html {
   dark grey green: #606861
    */
 
+  .colorPallette2 {
+    lightblue: #62A1D9;
+    lighterblue: #B9CBD9;
+    slate: #2C4859;
+    brightgreen: #7CA049;
+    darkgreen: #222F1D;
+  }
+  
+  
+   
+
 body {
   /* width: 100%; */
   padding: 0;
@@ -22,7 +33,7 @@ body {
 	font-style: normal;
 	font-size: 1.5em;
   font-weight: 400;
-  background-color: #606861;
+  background-color:  #222F1D;
 }
 
 h2 {
@@ -31,7 +42,7 @@ h2 {
 
 /* header styles */
 header {
-  background-color: #EBEBED;
+  background-color: #B9CBD9;
   width: 100%;
 }
 
@@ -83,7 +94,7 @@ h1 {
   display: flex;
   flex-direction: row;
   /* text-decoration: none; */
-  background-color: #EBFCCE;
+  background-color: #7CA049;
   align-items: center;
   justify-content: center;
 }
@@ -95,7 +106,7 @@ a {
 
 a:visited {
   /* text-decoration: 2px red solid; */
-  color: #606861;
+  color: #B9CBD9;
 }
 
 #main-nav ul li {
@@ -104,12 +115,12 @@ a:visited {
 }
 
 #main-nav ul li:hover {
-  background-color: #9BAA7D;
+  background-color: #62A1D9;
 }
 
 /* main container, css grid */
 main {
-  background-color: #606861;
+  background-color: #2C4859;
 }
 
 .container {
@@ -123,7 +134,7 @@ main {
 }
 
 .projects {
-  background-color: lightgrey;
+  background-color: #B9CBD9;
   padding: 5px;
   color: black;
   max-width: 100%;
@@ -134,7 +145,7 @@ main {
 }
 
 .title {
-  background-color: #9BAA7D;
+  background-color: #62A1D9;
   border-radius: 0.25em;
   margin: 2px;
 }
@@ -149,7 +160,7 @@ main {
 
 .button {
   border: none;
-  background-color: #9BAA7D;
+  background-color: #62A1D9;
   margin: 3px;
   border-radius: 0.25em;
   font-size: .75em;
@@ -157,7 +168,7 @@ main {
 }
 
 .button:hover {
-  background-color: #EBFCCE;
+  background-color: #7CA049;
 }
 
 /* resume styling */
